@@ -1,14 +1,17 @@
 # Class: ${username}
 # 
-# Creates sudoer user ${username} with public keys
+# Creates sudoer. Note password needs to be sha-512 hash.
 
-define add_sudoer ( $username = $title, 
-					$ssh_key = undef, 
-					$password = undef, 
-					$no_sudopass = false,
-					$uid = undef, 
-					$bash = '/bin/bash',
-					$home = "/home/${username}" ) {
+
+define add_sudoer ( 
+	$username = $title, 
+	$ssh_key = undef, 
+	$password = undef, 
+	$no_sudopass = false,
+	$uid = undef, 
+	$bash = '/bin/bash',
+	$home = "/home/${username}" ) {
+	
 
 	case $operatingsystem {
 		Ubuntu: {
