@@ -17,8 +17,8 @@ add_sudoer { 'username':
 	ssh_key 	=> 'somesshpubkey',
 	password	=> 'somesha512hash', 
 	no_sudopass	=> true, # when you run sudo, you will not be prompted for a password
-	$uid 		=> '555', 
-	$bash  		=> '/bin/bash',
-	$home  		=> '/home/foo'
+	uid 		=> '555', 
+	bash  		=> '/bin/bash',
+	home  		=> '/home/foo'
 </code>
 </pre>
