@@ -20,5 +20,6 @@ add_sudoer { 'username':
 	uid 		=> '555', 
 	bash  		=> '/bin/bash',
 	home  		=> '/home/foo'
+}
 </code>
 </pre>
