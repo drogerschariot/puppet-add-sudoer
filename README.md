@@ -1,3 +1,5 @@
+Depreciated add-sudoer is now apart of a bigger module [puppet-admin](https://github.com/drogerschariot/puppet-admin)
+
 puppet-add-sudoer
 -----------------
 
